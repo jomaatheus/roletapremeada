@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Roleta/Roleta.css">
+  <title>Roda da Fortuna</title>
+</head>
+<body>
+
+  <div class="profile-selection-container">
+    <div class="container">
+      <div class="roulette-container">
+        <div class="roulette-overlay">
+          <h3>Sorteando as coisas do fodido</h3>
+          <img src="./Fotos/WhatsApp Image 2023-12-04 at 12.44.51 AM.jpeg" alt="Imagem de Sorteio" width="20%">
+        </div>
+        <div class="roulette-wheel" id="wheel">
+          <!-- Adicione as opções da roleta aqui -->
+          <div class="wheel-item" style="--rotate: 0deg;"><img src="./Fotos/ps5.jpg" alt="Prêmio 1: PS5"></div>
+          <div class="wheel-item" style="--rotate: 45deg;"><img src="./Fotos/arcondicionado.jpg" alt="Prêmio 2: Ar-Condicionado"></div>
+          <div class="wheel-item" style="--rotate: 90deg;"><img src="./Fotos/biz.png" alt="Prêmio 3: Biz"></div>
+          <div class="wheel-item" style="--rotate: 135deg;"><img src="./Fotos/conta-lol.png" alt="Prêmio 4: Conta do Lol"></div>
+          <div class="wheel-item" style="--rotate: 180deg;"><img src="./Fotos/dinheiro.jpg" alt="Prêmio 5: Dinhheiro"></div>
+          <div class="wheel-item" style="--rotate: 225deg;"><img src="./Fotos/Guitarra.png" alt="Prêmio 6: Guitarra"></div>
+          <div class="wheel-item" style="--rotate: 270deg;"><img src="./Fotos/notebook.jpg" alt="Prêmio 7: Notebook"></div>
+          <div class="wheel-item" style="--rotate: 315deg;"><img src="./Fotos/tia.jpg" alt="Prêmio 8: Tia"></div>
+          
+          <!-- Adicione esta div para a cor de fundo e o texto -->
+          <div class="roulette-center">
+            <h2 class="premiada">ROLETA PREMIADA</h2>
+          </div>
+        </div>
+        <button id="spinWheel" onclick="spinWheel()">Girar</button>
+
+        <div id="result-container" style="display: none;">
+          <h2>Parabéns! Você ganhou:</h2>
+          <img id="result-image" alt="Resultado do Prêmio">
+          <p id="result-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./Roleta/Roleta.js"></script>
+</body>
+</html>
